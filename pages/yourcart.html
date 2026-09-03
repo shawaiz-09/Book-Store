@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Legacy Books</div>
+        <ul>
+            <a href="/index.html">
+                <li>Home</li>
+            </a>
+            <a href="/pages/morebooks.html">
+                <li>Books</li>
+            </a>
+            <a href="/pages/contact.html">
+                <li>Contact</li>
+            </a>
+            <a href="/pages/yourcart.html">
+                <li>Your Cart</li>
+            </a>
+        </ul>
+    </nav>
+    <div class="cartcontainer" id="cartcontainer"></div>
+    <div class="cart-totalbox" id="cart-totalbox" style="display: none;">
+        <h3>Total : <span id="total-price">$0</span></h3>
+        <button id="checkout-btn">CheckOut</button>
+    </div>
+
+    <script src="/script.js"></script>
+    <script>
+        renderCart();
+    </script>
+</body>
+
+</html>
